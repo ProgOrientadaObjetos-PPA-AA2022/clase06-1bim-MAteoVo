@@ -36,32 +36,33 @@ public class Ejecutor {
         // Uso de condicionales compuestos
         if (opcion == 1) {
             // Ingreso de datos para el tipo seleccionado
-            System.out.println("Ingrese nombre del hospital");
-            nombreHospital = entrada.nextLine();
-            System.out.println("Ingrese número de camas del hospital");
-            numeroDeCamas = entrada.nextInt();
-            System.out.println("Ingrese número de doctores del hospital");
-            numeroDeDoctores = entrada.nextInt();
-            System.out.println("Ingrese presupuesto anual del hospital");
-            presupuestoAnio = entrada.nextDouble();
-
-            // se procede a crear el objeto, haciendo uso del constructor
-            // que corresponda.
+//            System.out.println("Ingrese nombre del hospital");
+//            nombreHospital = entrada.nextLine();
+//            System.out.println("Ingrese número de camas del hospital");
+//            numeroDeCamas = entrada.nextInt();
+//            System.out.println("Ingrese número de doctores del hospital");
+//            numeroDeDoctores = entrada.nextInt();
+//            System.out.println("Ingrese presupuesto anual del hospital");
+//            presupuestoAnio = entrada.nextDouble();
+//
+//            // se procede a crear el objeto, haciendo uso del constructor
+//            // que corresponda.
             Hospital hosp1 = new Hospital(nombreHospital, numeroDeCamas, 
                     numeroDeDoctores,
                     presupuestoAnio);
-
-            System.out.printf("Datos Hospital\n"
-                    + "Nombre del hospital: %s\n"
-                    + "Ciudad del hospital: %s\n"
-                    + "Número de camas: %d\n"
-                    + "Número de doctores: %d\n"
-                    + "Presupuesto anual: %.2f\n",
-                    hosp1.obtenerNombreHospital(),
-                    hosp1.obtenerCiudadHospital(),
-                    hosp1.obtenerNumeroCamas(),
-                    hosp1.obtenerNumeroDoctores(),
-                    hosp1.obtenerPresupuestoAnual());
+//
+//            System.out.printf("Datos Hospital\n"
+//                    + "Nombre del hospital: %s\n"
+//                    + "Ciudad del hospital: %s\n"
+//                    + "Número de camas: %d\n"
+//                    + "Número de doctores: %d\n"
+//                    + "Presupuesto anual: %.2f\n",
+//                    hosp1.obtenerNombreHospital(),
+//                    hosp1.obtenerCiudadHospital(),
+//                    hosp1.obtenerNumeroCamas(),
+//                    hosp1.obtenerNumeroDoctores(),
+//                    hosp1.obtenerPresupuestoAnual());
+            System.out.printf("%s\n", hosp1);
         } else {
             if (opcion == 2) {
                 // Ingreso de datos para el tipo seleccionado
